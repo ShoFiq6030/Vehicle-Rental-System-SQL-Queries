@@ -95,23 +95,6 @@ HAVING COUNT(b.booking_id) > 2;
 
 **Explanation:** This query joins `vehicles` with `booking`, groups results by vehicle, counts bookings per vehicle, and filters groups with `HAVING` to return only vehicles with more than 2 bookings.
 
-**Notes:** If you want to include vehicles with zero bookings, use a `LEFT JOIN` and `COUNT(b.booking_id)` (zero counts will be shown for vehicles without bookings) and then apply a `HAVING` condition accordingly.
 
----
 
-## How to run
 
-1. Open the `queries.sql` file in your SQL editor or run statements directly in your database console.
-2. Make sure you are connected to the database that contains the `booking`, `users`, and `vehicles` tables.
-3. Execute each query and inspect results.
-
----
-
-## Final notes & next steps 💡
-
-- If you want, I can add sample result sets, test cases, or alternative versions of these queries (e.g., using `LEFT JOIN` variants or indexing tips).
-- Open an issue or request changes if you prefer additional formatting or more detailed examples.
-
----
-
-**Author:** Assignment 3 — SQL examples
